@@ -1,10 +1,15 @@
 import "./App.css";
-import Navbar from "./components/Navbar";
+import Navbar from "./components/Sidebar-nav";
+import Home from "./pages/Home";
+import UserLogIn from "./pages/userLogIn";
+import { Routes, Route } from "react-router-dom";
 
 function App() {
   return (
     <>
-      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
     </>
   );
 }

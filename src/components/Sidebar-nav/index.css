@@ -1,0 +1,24 @@
+.nav {
+    width: 80px;
+    height: 685px;
+    background-color: beige;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+}
+.icon {
+    width: 30px;
+}
+.nav-link {
+    margin: 15px 0;
+}
+.icon:hover {
+    transform: scale(1.5);
+    color: purple;
+    cursor: pointer;
+}
+.nav.expanded {
+    width :240px ;
+    background-color: aqua;
+}

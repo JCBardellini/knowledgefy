@@ -1,0 +1,15 @@
+#container {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 75px 1fr 75px;
+}
+#header {
+    grid-column: span 2;
+}
+#sidebar {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
+#footer {
+    grid-column: span 2;
+}

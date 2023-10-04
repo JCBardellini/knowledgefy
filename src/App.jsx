@@ -2,25 +2,32 @@ import "./App.css";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Sidebar from "./components/Sidebar-nav";
-import Navbar from "./components/Sidebar-nav";
 import Home from "./pages/Home";
 import Library from "./pages/Library";
 import Podcast from "./pages/Podcast";
 import Search from "./pages/Search";
-import UserLogIn from "./pages/userLogIn";
 import { Routes, Route } from "react-router-dom";
+import UserSettings from "./pages/User";
+import { useState } from "react";
 
 function App() {
+  // setting the state to check if sidebar is active
+  const [isSidebarActive, setIsSidebarActive] = useState(false);
+  // will control it
+  const toggleSidebar = () => {
+    setIsSidebarActive(!isSidebarActive);
+  };
   return (
     <>
-      <div id="container">
-        <Header id="header" />
-        <Sidebar id="sidebar" />
+      <div id="container" className={isSidebarActive ? "sidebarActive" : ""}>
+        <Header />
+        <Sidebar toggleSidebar={toggleSidebar} />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/search" element={<Search />} />
           <Route path="/podcast" element={<Podcast />} />
           <Route path="/library" element={<Library />} />
+          <Route path="/user-settings" element={<UserSettings />} />
         </Routes>
         <Footer />
       </div>

@@ -1,24 +1,183 @@
-.nav {
-    width: 80px;
-    height: 685px;
-    background-color: beige;
+/* 
+color theme:
+darkGreen: #5c8d89;
+green: #74b49b;
+lightGreen: #a7d7c5;
+veryLightGreen: #f4f9f4;
+darkGrey: #828282;
+white: #ffffff;
+lightGrey: #f2f2f2; 
+*/
+/* sidebar css */
+/* sidebar open */
+.sidebar {
+    background-color: #dcf5dc;
+    width: 15rem;
+    height: 82vh;
+    position: relative;
+    top: 0;
+    left: 0;
+    padding: 1rem 1rem;
+    transition: 0.2s all;
+    
+}
+/* profile section */
+.user {
     display: flex;
-    flex-direction: column;
-    gap: 5px;
     align-items: center;
+    justify-content: flex-start;
+    padding: 1rem 0 0 0;
 }
-.icon {
-    width: 30px;
+.user .userIcon {
+    width: 3rem;
+    height: auto;
 }
-.nav-link {
-    margin: 15px 0;
+.user p {
+    padding-left: 1rem;
+    margin: 0;
+    font-size: 16px;
+    color: #828282;
+    letter-spacing: .5px;
+    
 }
-.icon:hover {
-    transform: scale(1.5);
+.user .userLink {
+    text-decoration: none;
+    font-size: 16px;
+    color: #828282;
+}
+.userLink:hover {
     color: purple;
+}
+/* button to click that will expand the navbar and close it */
+.burgerContainer {
+    content: "";
+    background-color: #74b49b;
+    position: absolute;
+    right: calc(-34px / 2);
+    top: calc(5.5rem / 1.15);
+    width: 35px;
+    height: 35px;
+    border-radius: 2rem;
+    z-index: 1;
+}
+.burgerContainer .burgerTrigger {
+    content: "";
+    position: relative;
+    width: 35px;
+    height: 35px;
+    background-color: red;
+    cursor: pointer;
+    z-index: 6;
+    opacity: 0;
+}
+.burgerContainer .burgerMenu {
+    content: "";
+    background-color: #74b49b;
+    position: relative;
+    width: 20px;
+    height: 3px;
+    border-radius: 2rem;
+    bottom: calc(35px / 2);
+    left: 0.45rem;
+    transition: 0.2s all;
+}
+.burgerContainer .burgerMenu::after {
+    content: "";
+    background-color: #ffffff;
+    position: absolute;
+    width: 20px;
+    height: 3px;
+    border-radius: 2rem;
+    top: 0.4rem;
+    transform: translateY(-0.5rem) rotate(45deg);
+    transition: 0.2s all;
+}
+.burgerContainer .burgerMenu::before {
+    content: "";
+    background-color: #ffffff;
+    position: absolute;
+    width: 20px;
+    height: 3px;
+    border-radius: 2rem;
+    top: -0.38rem;
+    transform: translateY(0.25rem) rotate(-45deg);
+    transition: 0.2s all;
+}
+.burgerContainer::after {
+    content:" ";
+    position: absolute;
+    right: 35px;
+    top: calc(35px / 2);
+    z-index: 0;
+    width: calc(6rem + 15rem);
+    background-color: #f2f2f2;
+    height: 2px;
+    transition: 0.2s all;
+}
+/* icons */
+.iconsContainer{
+     margin-top: 2rem;
+}
+.iconsContainer .navUL {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: column;
+    list-style: none;
+    padding: 0;
+    margin: 0
+}
+.navUL .navItem {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    width: 100%;
+    border-radius: 1rem;
     cursor: pointer;
 }
-.nav.expanded {
-    width :240px ;
-    background-color: aqua;
+.navItem .navLink {
+    text-decoration: none;
+    color: #828282;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 0 0 2rem;
+}
+.navLink:hover {
+    color: purple;
+}
+.icon {
+    margin: 0px 0 0 5px;
+    width: 35px;
+    height: auto;
+}
+
+/* sidebar close */
+.sidebar.active {
+    width: 5rem;
+    transition: 0.2s all;
+}
+.burgerContainer.active {
+    transition: 0.2s all;
+}
+.burgerContainer.active .burgerMenu {
+    background-color: #ffffff;
+    transition: 0.2s all;
+}
+.burgerContainer.active .burgerMenu::before {
+    transform: translateY(0rem) rotate(0deg);
+    transition: 0.2s all;
+}
+.burgerContainer.active .burgerMenu::after {
+    transform: translateY(0rem) rotate(0deg);
+    transition: 0.2s all;
+}
+.user.active p {
+    visibility: hidden;
+}
+
+.navLink.active {
+    visibility: hidden;
 }

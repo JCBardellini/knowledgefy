@@ -1,9 +1,13 @@
 import React from "react";
-import Header from "../../components/Header";
-import Sidebar from "../../components/Sidebar-nav";
+import "./index.css";
 
 const Home = () => {
-  return <div>Home</div>;
+  return (
+    <div id="home-container">
+      <div> I am carasol</div>
+      <h2>Hello</h2>
+    </div>
+  );
 };
 
 export default Home;

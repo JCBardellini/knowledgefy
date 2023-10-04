@@ -26,16 +26,16 @@ const Header = () => {
   };
   // isUserLogIn = true => show username and avatar
   // will get the username from the global but will make a fake username to check if it works state in redux
-  let username = "Jc Bardellini";
-  const avatar = []; // will add avatar pictures later
-  const logInUser = () => {
-    return (
-      <>
-        <p className="user">{username}</p>
-        <div className="avatar">{avatar}</div>
-      </>
-    );
-  };
+  // let username = "Jc Bardellini";
+  // const avatar = []; // will add avatar pictures later
+  // const logInUser = () => {
+  //   return (
+  //     <>
+  //       <p className="user">{username}</p>
+  //       <div className="avatar">{avatar}</div>
+  //     </>
+  //   );
+  // };
   // i have to make the sign in page bring a pop up, then it creates a form - to put in ur information
   return (
     <header id="header">

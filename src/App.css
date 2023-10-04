@@ -1,15 +1,23 @@
 #container {
     display: grid;
-    grid-template-columns: 1fr 4fr;
+    grid-template-columns: 15rem 1fr;
     grid-template-rows: 75px 1fr 75px;
+    transition: grid-template-columns 0.2s;
 }
+
 #header {
     grid-column: span 2;
 }
-#sidebar {
+
+.sidebar {
     grid-column: 1 / 2;
     grid-row: 2 / 3;
 }
+
 #footer {
     grid-column: span 2;
+}
+
+#container.sidebarActive {
+    grid-template-columns: 5rem 1fr;
 }

@@ -2,9 +2,10 @@ import React from "react";
 import "./index.css";
 
 const Home = () => {
+  // have a state that will push and control the carasol, will need to import one
+
   return (
     <div id="home-container">
-      <div> I am carasol</div>
       <h2>Hello</h2>
     </div>
   );

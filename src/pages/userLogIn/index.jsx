@@ -1,7 +1,16 @@
 import React from "react";
 import "./index.css";
+import { useDispatch, useSelector } from "react-redux";
+import { initiateSpotifyLogin } from "../../Redux/slices/userActions";
 
 const UserLogIn = () => {
+  const dispatch = useDispatch();
+  const accessToken = useSelector((state) => state.user.accessToken);
+  const userProfile = useSelector((state) => state.user.userProfile);
+
+  const handleLoginUser = () => {
+    dispatch(initiateSpotifyLogin());
+  };
   return (
     <div>
       <h1>will add a name function</h1>

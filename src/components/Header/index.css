@@ -1,6 +1,6 @@
 #header {
     height: 75px;
-    background-color: rgb(185, 135, 68);
+    background-color: #74b49b;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -15,7 +15,6 @@
     display: flex;
     justify-content: space-around;
     width: 250px;
-    background-color: aqua;
     margin-right: 10px;
 }
 .sign-in {

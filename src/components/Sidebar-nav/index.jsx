@@ -69,9 +69,12 @@ const Sidebar = ({ toggleSidebar }) => {
   // displaying the icons array
   const navbar = iconsArray.map((item, index) => {
     return (
-      <div className={isExpanded ? "iconsContainer active" : "iconsContainer"}>
+      <div
+        className={isExpanded ? "iconsContainer active" : "iconsContainer"}
+        key={index}
+      >
         <ul className="navUL">
-          <li className="navItem" key={index}>
+          <li className="navItem">
             <img
               src={item.icon}
               alt={item.name}
@@ -81,7 +84,6 @@ const Sidebar = ({ toggleSidebar }) => {
             <Link
               to={item.route}
               className={`navLink ${isExpanded ? "active" : ""}`}
-              activeClassName="activeLink"
             >
               {item.name}
             </Link>

@@ -8,7 +8,8 @@ import Podcast from "./pages/Podcast";
 import Search from "./pages/Search";
 import { Routes, Route } from "react-router-dom";
 import UserSettings from "./pages/User";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { getTokenFromUrl } from "./Redux/slices/userActions";
 
 function App() {
   // setting the state to check if sidebar is active
@@ -17,6 +18,11 @@ function App() {
   const toggleSidebar = () => {
     setIsSidebarActive(!isSidebarActive);
   };
+  useEffect(() => {
+    const token = getTokenFromUrl();
+    window.location.hash = "";
+    console.log("hi", token);
+  }, {});
   return (
     <>
       <div id="container" className={isSidebarActive ? "sidebarActive" : ""}>

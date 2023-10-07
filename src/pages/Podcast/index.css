@@ -30,7 +30,7 @@
     justify-content: space-between;
     align-items: center;
     width: 200px;
-    height: 275px;
+    min-height: 275px;
     background-color: #dcf5dc;
     border-radius: 10px;
 }

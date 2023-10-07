@@ -1,0 +1,22 @@
+.audioBooks {
+    margin: 10px 20px 10px 20px;
+    color: #828282;
+    height: 82vh;
+    overflow-y: scroll;
+}
+.audioBookCover {
+    margin-top: 15px;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.publisher {
+    margin-bottom: 10px;
+    text-align: center;
+}
+.eachAudioBookTitle {
+    text-align: center;
+    padding: 0 5px;
+    margin: 10px;
+}

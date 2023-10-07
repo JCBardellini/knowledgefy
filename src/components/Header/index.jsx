@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 import "./index.css";
-import Home from "../../pages/Home";
 import { Navigate, useNavigate } from "react-router-dom";
-import { loginURL } from "../../Redux/slices/userActions";
 
 const Header = () => {
   const navigate = useNavigate();
@@ -13,7 +11,8 @@ const Header = () => {
   const notLogInUser = () => {
     const handleLoginClick = () => {
       // Navigate to the login URL when the "Log In" button is clicked
-      window.location.href = loginURL;
+
+      setIsLoggedInUser(true);
     };
 
     return (
@@ -32,7 +31,7 @@ const Header = () => {
         {title}
       </h1>
       <div className="logIn-container">
-        {isLoggedInUser ? logInUser() : notLogInUser()}
+        {isLoggedInUser ? <h2>logged in</h2> : notLogInUser()}
       </div>
     </header>
   );

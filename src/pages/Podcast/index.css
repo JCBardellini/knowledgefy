@@ -1,0 +1,59 @@
+.podcast {
+    margin: 10px 20px 10px 20px;
+    color: #828282;
+    height: 82vh;
+    overflow-y: scroll;
+}
+.mainTitle {
+    font-size: 3rem;
+    letter-spacing: 1.5px;
+    text-align: center;
+    margin-top: 10px;
+}
+.subtitle {
+    font-size: 1.3rem;
+    margin-left: 10px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.contentContainer {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.eachContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 200px;
+    height: 275px;
+    background-color: #dcf5dc;
+    border-radius: 10px;
+}
+.episodeImg {
+    margin-top: 15px;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.eachEpisodeTitle {
+    text-align: center;
+    padding: 0 5px;
+}
+.containerBottomContent {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    margin-bottom: 5px;
+}
+.containerBottomContent div:hover {
+    color: purple;
+    cursor: pointer;
+}
+

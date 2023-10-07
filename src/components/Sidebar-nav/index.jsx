@@ -35,9 +35,9 @@ const Sidebar = ({ toggleSidebar }) => {
       route: "/podcast",
     },
     {
-      name: "Library",
+      name: "Audio Books",
       icon: libraryIcon,
-      route: "/library",
+      route: "/audio-books",
     },
   ];
 

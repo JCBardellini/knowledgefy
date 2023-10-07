@@ -1,6 +1,8 @@
 // import the store
 import { configureStore } from "@reduxjs/toolkit";
-import userAuthReducer from "./slices/userSlices"
+import authReducer from "./slices/userSlices"
+import musicReducer from "./slices/musicSlice" 
+
 
 
 
@@ -9,7 +11,7 @@ import userAuthReducer from "./slices/userSlices"
 export const store = configureStore({
   reducer: {
     // we put our slices here
-    userAuth: userAuthReducer,
-    
-  }
+    userAuth: authReducer,
+    music: musicReducer,
+  }, 
 })

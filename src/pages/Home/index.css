@@ -1,3 +1,16 @@
 #home-container {
     background-color: #f5f5f5;
 }
+.discover {
+    font-size: 2rem;
+    color: #828282;
+    letter-spacing: 1.5px;
+    margin: 0 auto;
+}
+.homeHeader {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+

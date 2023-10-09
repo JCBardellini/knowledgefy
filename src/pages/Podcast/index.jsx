@@ -85,6 +85,7 @@ const Podcast = () => {
   // final version, this makes it so i repeat myself
   const excludedIndices = [0, 4];
 
+  console.log(podcast);
   const podcastEpisodes = podcast.map((item) => {
     if (
       !excludedIndices.includes(item.index) &&

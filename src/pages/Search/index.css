@@ -1,0 +1,33 @@
+.search {
+    height: 82vh;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+}
+
+.genreContainer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+.eachGenreContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 150px;
+    background-color: #dcf5dc;
+    border-radius: 10px;
+}
+.genreName{
+    color: #828282;
+    font-size: 1.25rem;
+    text-align: center;
+}
+.eachGenreContainer:hover {
+    background-color: #a5eaa5;
+    cursor: pointer;
+}

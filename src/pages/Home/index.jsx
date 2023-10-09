@@ -8,13 +8,6 @@ const Home = () => {
   const music = useSelector((store) => store.music);
   return (
     <div id="home-container">
-      <div className="homeHeader">
-        <div>
-          <ArrowBackIosIcon />
-          <ArrowForwardIosIcon />
-        </div>
-        <h2 className="discover">Trending playlist</h2>
-      </div>
       <h2>
         {music.map((item) => {
           return <div key={item.key}>{item.title}</div>;

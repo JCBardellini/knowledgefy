@@ -12,7 +12,7 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 import { useDispatch, useSelector } from "react-redux";
 import { populate } from "./Redux/slices/musicSlice";
-import PodcastEpisode from "./pages";
+import PodcastEpisode from "./pages/PodcastEpisode/index";
 import Book from "./pages/Book";
 
 function App() {

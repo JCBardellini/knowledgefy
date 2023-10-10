@@ -1,8 +1,45 @@
-# React + Vite
+# Spotify Clone App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Still working on it.
 
-Currently, two official plugins are available:
+A Spotify clone app that allows users to search for music, look at audio books, podcast and be able to listen to songs.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Table of Contents
+
+- [Demo](#demo)
+- [Features](#features)
+- [Usage](#usage)
+- [Technologies Used](#technologies-used)
+- [Contributing](#contributing)
+- [License](#license)
+
+## Demo
+
+https://soundbox2.netlify.app/user-settings
+
+## Features
+
+List the key features of your Spotify clone app. For example:
+
+- Music streaming (working on this)
+- Playlist creation and management (working on this)
+- Music recommendations (working on this)
+- Search for songs and artists (working on this)
+- Podcast
+- Audio Books
+- many more features to come
+
+## Usage
+
+People will be able to search for music, look at trending artist and other cool features that combine sound-cloud and spotify.
+
+## Technologies Used
+
+- React.js
+- Redux
+- HTML, CSS, JavaScript
+- Mui library
+- Axios
+- Browser Router
+
+##

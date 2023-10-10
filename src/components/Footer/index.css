@@ -2,4 +2,27 @@
     background-color: #74b49b;
     height: 75px;
     color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.heartIcon {
+    color: red;
+}
+.img-container {
+    width: 64px;
+    height: 64px;
+    background-color: aliceblue;
+}
+.left-footerPlayer {
+    display: flex;
+    width: 300px;
+    margin-left: 15px;
+    justify-content: space-around;
+    align-items: center;
+}
+.playButtons {
+    width: 300px;
+    display: flex;
+    justify-content: space-evenly;
 }

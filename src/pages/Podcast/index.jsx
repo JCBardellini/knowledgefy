@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { fetchPodcastItems } from "../../Redux/APICalls/podcastApiCall";
 import PlayCircleFilledRoundedIcon from "@mui/icons-material/PlayCircleFilledRounded";
 import "./index.css";
+import { Link } from "react-router-dom";
 
 const Podcast = () => {
   const [podcast, setPodcast] = useState([]);
@@ -105,7 +106,9 @@ const Podcast = () => {
                     className="episodeImg"
                   />
                 </div>
-                <h4 className="eachEpisodeTitle">{content.name}</h4>
+                <Link to={`/podcast/${content.id}`}>
+                  <h4 className="eachEpisodeTitle">{content.name}</h4>
+                </Link>
                 <div className="containerBottomContent">
                   <p>
                     {content.release_date} | {content.type}

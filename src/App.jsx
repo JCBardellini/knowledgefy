@@ -12,6 +12,8 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 import { useDispatch, useSelector } from "react-redux";
 import { populate } from "./Redux/slices/musicSlice";
+import PodcastEpisode from "./pages";
+import Book from "./pages/Book";
 
 function App() {
   // setting the state to check if sidebar is active
@@ -71,6 +73,8 @@ function App() {
           <Route path="/podcast" element={<Podcast />} />
           <Route path="/audio-books" element={<Library />} />
           <Route path="/user-settings" element={<UserSettings />} />
+          <Route path="/podcast/:id" element={<PodcastEpisode />} />
+          <Route path="/audio-books/:id" element={<Book />} />
         </Routes>
         <Footer />
       </div>

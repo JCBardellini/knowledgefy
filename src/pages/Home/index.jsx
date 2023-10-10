@@ -6,6 +6,7 @@ import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 
 const Home = () => {
   const music = useSelector((store) => store.music);
+  console.log(music);
   return (
     <div id="home-container">
       <h2>

@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { fetchAudioBookItems } from "../../Redux/APICalls/audiobooks";
 import PlayCircleFilledRounded from "@mui/icons-material/PlayCircleFilledRounded";
 import "./index.css";
+import { Link } from "react-router-dom";
 
 const Library = () => {
   const [audioBook, setAudioBook] = useState([]);
@@ -39,7 +40,9 @@ const Library = () => {
                     className="audioBookCover"
                   />
                 </div>
-                <h4 className="eachAudioBookTitle">{content.name}</h4>
+                <Link to={`/audio-books/${content.id}`}>
+                  <h4 className="eachAudioBookTitle">{content.name}</h4>
+                </Link>
                 {content.publisher && (
                   <p className="publisher">{content.publisher.split(",")[0]}</p>
                 )}

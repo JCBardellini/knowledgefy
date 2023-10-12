@@ -1,6 +1,6 @@
 .podcast {
     margin: 10px 20px 10px 20px;
-    height: 82vh;
+    height: 79.5vh;
     color: #828282;
     overflow-y: scroll;
 }
@@ -54,7 +54,7 @@
     margin-bottom: 5px;
 }
 .containerBottomContent div:hover {
-    color: purple;
+    color: #000080;
     cursor: pointer;
 }
 

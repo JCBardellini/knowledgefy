@@ -10,8 +10,8 @@
     color: red;
 }
 .img-container {
-    width: 64px;
-    height: 64px;
+    width: 60px;
+    height: 60px;
     background-color: aliceblue;
 }
 .left-footerPlayer {
@@ -25,4 +25,7 @@
     width: 300px;
     display: flex;
     justify-content: space-evenly;
+}
+.volumeSlider {
+    margin-right: 38px;
 }

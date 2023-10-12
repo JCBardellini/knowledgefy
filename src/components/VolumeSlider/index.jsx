@@ -11,7 +11,7 @@ const VolumeSlider = () => {
   };
   return (
     <Box sx={{ width: 200 }}>
-      <Stack spacing={2} direction="row" sx={{ mb: 1 }} alignItems="center">
+      <Stack spacing={2} direction="row" alignItems="center">
         <VolumeDown />
         <Slider aria-label="Volume" value={value} onChange={handleChange} />
         <VolumeUp />

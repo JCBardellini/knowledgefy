@@ -53,7 +53,9 @@ const Footer = () => {
         <SkipNextIcon fontSize="large" />
         <RepeatIcon fontSize="large" />
       </div>
-      <VolumeSlider />
+      <div className="volumeSlider">
+        <VolumeSlider />
+      </div>
     </div>
   );
 };

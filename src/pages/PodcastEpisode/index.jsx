@@ -24,9 +24,10 @@ const PodcastEpisode = () => {
 
   return (
     <div>
+      <h1>Hello</h1>
       {item.name}
       {item.description}
-      <img src={item.images[0]?.url} alt="" />
+      <img src={item.images[0]?.url} alt={item.name} />
     </div>
   );
 };

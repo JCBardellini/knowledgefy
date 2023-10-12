@@ -6,10 +6,11 @@
     align-items: center;
 }
 .title {
-    margin-left: 10px;
+    margin-left: 18px;
     letter-spacing: 2px;
     font-size: 3rem;
     cursor: pointer;
+    color: #000080;
 }
 .logIn-container {
     display: flex;
@@ -23,6 +24,7 @@
     cursor: pointer;
     background: none;
     border: none;
+    color: whitesmoke;
 }
 .sign-up {
     font-size: 20px;
@@ -31,6 +33,7 @@
     background: none;
     border: 1px solid black;
     cursor: pointer;
+    color: whitesmoke;
 }
 .sign-in:hover {
     border-bottom: 1px solid purple;

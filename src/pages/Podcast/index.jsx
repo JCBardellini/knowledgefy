@@ -86,8 +86,10 @@ const Podcast = () => {
   // final version, this makes it so i repeat myself
   const excludedIndices = [0, 4];
 
-  console.log(podcast);
+  // console.log(podcast);
+  // mapping the data to get the content needed to display that podcast information
   const podcastEpisodes = podcast.map((item) => {
+    // have to do an if statement to check every condition is true before returning the content
     if (
       !excludedIndices.includes(item.index) &&
       item.content &&
